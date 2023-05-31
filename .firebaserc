@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "unifiedplatform-dev": {
+      "hosting": {
+        "proposalportal-hfn-dev": [
+          "proposalportal-hfn-dev"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.UserHeaderSection{
+    .ProfileContent{
+        .personalDetailForm{
+            .form-group{
+                .autocomplete-custom-st{
+                   a{
+                    text-overflow:revert;
+                   }
+                }
+            }
+        }
+    }
+}
+input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
+    -webkit-appearance:menulist !important;
+}
+.input-flexbox {
+    display:flex !important;
+    display:-webkit-flex !important;
+    flex: 1 0 0;
+    -webkit-flex: 1 0 0;
+    min-width:95%;
+  }

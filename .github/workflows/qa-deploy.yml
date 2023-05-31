@@ -1,0 +1,32 @@
+name: QA-Deploy
+
+on:
+  push:
+    branches:
+    - staging
+
+jobs:
+  qabuild:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14.18.0
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.18.0
+    - name: npm install --force
+      run: npm install
+    - name: npm run build
+      run: CI=false npm run build
+      env:
+        NODE_OPTIONS: --max_old_space_size=8192
+        REACT_APP_FIREBASE_AUTH_CONFIG: ${{ secrets.REACT_APP_FIREBASE_AUTH_CONFIG }}
+        REACT_APP_MYSRCM_CONFIG: ${{ secrets.REACT_APP_MYSRCM_CONFIG }}
+        FIREBASE_SERVICE_ACCOUNT_DETAILS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}        
+    - name: Deploy to Firebase
+      uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting:proposalportal-hfn-dev
+      env:
+        GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        PROJECT_ID: unifiedplatform-dev

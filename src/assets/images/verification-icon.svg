@@ -1,0 +1,9 @@
+<svg id="Component_26_2" data-name="Component 26 – 2" xmlns="http://www.w3.org/2000/svg" width="17.424" height="17.02" viewBox="0 0 17.424 17.02">
+  <g id="Group_7055" data-name="Group 7055" transform="translate(10.57 10.661)">
+    <line id="Line_169" data-name="Line 169" x2="2" y2="2" transform="translate(0 3)" fill="none" stroke="#4b58ab" stroke-width="1"/>
+    <line id="Line_170" data-name="Line 170" x1="5" y2="5" transform="translate(1.5)" fill="none" stroke="#4b58ab" stroke-width="1"/>
+    <g id="Group_7056" data-name="Group 7056" transform="translate(-10.57 -10.661)">
+      <path id="Path_23214" data-name="Path 23214" d="M12.264,11.74v1.694a5.04,5.04,0,0,0-4.516.615,4.835,4.835,0,0,0-2.1,3.971H4a6.44,6.44,0,0,1,2.562-5.127,6.714,6.714,0,0,1,5.7-1.153Zm-1.653-1.015A4.91,4.91,0,0,1,5.653,5.863a4.96,4.96,0,0,1,9.917,0A4.91,4.91,0,0,1,10.611,10.726Zm0-1.621a3.273,3.273,0,0,0,3.306-3.242,3.306,3.306,0,0,0-6.611,0A3.273,3.273,0,0,0,10.611,9.1Z" transform="translate(-4 -1)" fill="#4b58ab"/>
+    </g>
+  </g>
+</svg>
